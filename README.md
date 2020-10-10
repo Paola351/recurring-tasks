@@ -13,4 +13,4 @@ Example if you want to run it at 9:00 am:
 ## Usage
 Notifications are configured in `tasks.ini`.
 
-There are different task types: daily, weekly, monthly, yearly and free. You can find examples for all types in the file. Don't forget to uncomment the sections (remove ;)
+There are different task types: daily, weekly, monthly, weekdayofmonth, yearly and free. You can find examples for all types in the file. Don't forget to uncomment the sections (remove ;)

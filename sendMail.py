@@ -12,6 +12,8 @@ def sendNotification(subject, description):
 	prefix = config.get('email', 'MailPrefix')
 	headers = "From: %s\nTo: %s\nSubject: %s\n\n" % (sender, recipient, prefix + ' ' + subject)
 	body = "Recurring task is due: " + description
+	if subject == 'Error':
+		body = "Error: " + description
 
 	message = headers + body
 	context = ssl.create_default_context()
